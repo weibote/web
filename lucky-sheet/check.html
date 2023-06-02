@@ -1,0 +1,47 @@
+<!--
+ * @Author: error: git config user.name && git config user.email & please set dead value or install git
+ * @Date: 2022-11-08 10:14:18
+ * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
+ * @LastEditTime: 2022-11-08 10:23:47
+ * @FilePath: \lucky-sheet\check.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./plugins/css/pluginsCss.css' />
+    <link rel='stylesheet' href='./plugins/plugins.css' />
+    <link rel='stylesheet' href='./css/luckysheet.css' />
+    <link rel='stylesheet' href='./assets/iconfont/iconfont.css' />
+    <script src="./plugins/js/plugin.js"></script>
+    <script src="./luckysheet.umd.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="luckysheet" style="margin:0px;padding:0px;position:absolute;width:100%;height:100%;left: 0px;top: 0px;"></div>
+    <script>
+        $(function () {
+            //配置项
+            var options = {
+                container: 'luckysheet' //luckysheet为容器id
+            }
+            luckysheet.create(options)
+        })
+// 配置项
+const options = {
+    container: 'luckysheet', // 设定DOM容器的id
+    title: 'system check', // 设定表格名称
+    lang: 'zh' // 设定表格语言
+
+    // 更多其他设置...
+}
+
+// 初始化表格
+luckysheet.create(options)
+
+    </script>    
+</body>
+</html>
